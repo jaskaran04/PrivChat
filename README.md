@@ -1,10 +1,10 @@
-# 🧠 LLM ChatBot with FastAPI, spaCy NER & Ollama
+# LLM ChatBot with FastAPI, spaCy NER & Ollama
 
 This project is a minimal yet complete chatbot built using FastAPI, spaCy, and a local LLM served via Ollama. It processes user prompts, detects Named Entities in real-time, and returns an LLM-generated response. This demo emphasizes backend API design and local LLM integration.
 
 ---
 
-# ✨ Features
+# Features
 
 * Named Entity Recognition (NER) with spaCy
 * Local LLM query via Ollama REST API
@@ -14,7 +14,7 @@ This project is a minimal yet complete chatbot built using FastAPI, spaCy, and a
 
 ---
 
-# 🧰 Tech Stack
+# Tech Stack
 
 * Backend: FastAPI, Python
 * NLP Model: spaCy (`en_core_web_sm`)
@@ -24,21 +24,25 @@ This project is a minimal yet complete chatbot built using FastAPI, spaCy, and a
 
 ---
 
-# 🗂️ Project Structure
+# Project Structure
 
 ```
-your_project/
+PrivChat-LLM(NER)/
+├── structure.txt              
 ├── backend/
-│   ├── main.py             # FastAPI app entrypoint
-│   ├── requirements.txt    # Python dependencies
-│   └── venv/               # Python virtual environment (excluded in .gitignore)
-├── index.html              # Sample frontend page
-└── README.md
-```
-
+│   ├── __pycache__/           
+│   ├── main.py                
+│   ├── requirements.txt       
+│   └── venv/                  
+│
+├── frontend/
+│   ├── index.html             
+│   └── static/
+│       ├── style.css          
+│       └── app.js             
 ---
 
-# 🚀 Setup Instructions
+# Setup Instructions
 
 # 1. Clone & Setup Environment
 
@@ -84,7 +88,7 @@ Visit: `http://localhost:8000/index.html`
 
 ---
 
-# 🧪 How to Use
+# How to Use
 
 1. Type a prompt into the input box.
 2. Click Send.
@@ -95,17 +99,7 @@ Visit: `http://localhost:8000/index.html`
 
 ---
 
-# 🔍 Test Prompts
-
-Use these for a smooth demo:
-
-* `"Barack Obama was born in Hawaii."`
-* `"Google is headquartered in California."`
-* `"In 2019, Amazon opened a logistics hub near Munich."`
-
----
-
-# 🐞 Troubleshooting
+# Troubleshooting
 
 * spaCy not recognizing entities? Confirm `en_core_web_sm` is downloaded.
 * No LLM response? Ensure `ollama serve` is active and the model is loaded.
