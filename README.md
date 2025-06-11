@@ -41,6 +41,7 @@ PrivChat-LLM(NER)/
 │       ├── style.css          
 │       └── app.js             
 ---
+```
 
 # Setup Instructions
 
