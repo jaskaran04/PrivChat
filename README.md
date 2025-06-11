@@ -48,10 +48,10 @@ PrivChat-LLM(NER)/
 # 1. Clone & Setup Environment
 
 ```bash
-git clone https://github.com/yourname/llm-chatbot.git
-cd llm-chatbot/backend
+git clone https://github.com/jaskaran04/PrivChat.git
+cd PrivChat/backend
 python -m venv venv
-source venv/bin/activate  # Windows: venv\\Scripts\\activate
+source venv/bin/activate  
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 ```
@@ -62,7 +62,7 @@ Ensure [Ollama](https://ollama.ai/) is installed:
 
 ```bash
 ollama serve
-ollama pull llama2  # or any supported model
+ollama pull llama2  
 ```
 
 ---
