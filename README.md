@@ -1,6 +1,6 @@
 # LLM ChatBot with FastAPI, spaCy NER & Ollama
 
-This project is a minimal yet complete chatbot built using FastAPI, spaCy, and a local LLM served via Ollama. It processes user prompts, detects Named Entities in real-time, and returns an LLM-generated response. This demo emphasizes backend API design and local LLM integration.
+This project is a chatbot built using FastAPI, spaCy, and a local LLM served via Ollama. It processes user prompts, detects Named Entities in real-time, and returns an LLM-generated response. This demo emphasizes backend API design and local LLM integration.
 
 ---
 
