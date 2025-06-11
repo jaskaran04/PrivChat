@@ -1,0 +1,16 @@
+Folder PATH listing
+Volume serial number is 9413-A10E
+C:.
+¦   structure.txt
+¦   
++---Backend
+¦       main.py
+¦       requirements.txt
+¦       
++---Frontend
+    ¦   index.html
+    ¦   
+    +---static
+            app.js
+            style.css
+            

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PrivChat</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="window">
+    <div class="titlebar">
+      <div class="hamburger">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </div>
+      <div class="title">PrivChat</div>
+      <svg class="settings-icon" viewBox="0 0 24 24">
+        <path d="M12 15.5A3.5 3.5 0 1 1 12 8a3.5 3.5 0 0 1 0 7z"/>
+      </svg>
+    </div>
+
+    <div class="content">
+      <div class="sidebar">
+        <div class="chat-space-btn active" onclick="switchChat(1)" id="chatBtn1">Chat Space 1</div>
+        <div class="chat-space-btn" onclick="switchChat(2)" id="chatBtn2">Chat Space 2</div>
+      </div>
+
+      <div class="chat-container">
+        <div class="chat-window" id="chatWindow">
+          <div class="chat-prompt">Enter your prompt below:</div>
+          <div class="input-area">
+            <input type="text" id="userInput" placeholder="Type your question here..." />
+            <button id="sendButton" onclick="sendRequest()">Send</button>
+          </div>
+          <div class="chat-example"></div>
+          <div class="output-pii-scrollbox">
+            <div id="outputBox" class="output-box collapsed"></div>
+            <button id="toggleBtn" onclick="toggleOutput()" style="display: none;">Show More</button>
+            <div id="piiBox" class="pii-box"></div>
+          </div>
+          <div class="pii-status">PII Detected <div class="pii-info-btn">i</div></div>
+          <div class="user-icon">U</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
